@@ -76,7 +76,7 @@ Download these JARs and put them in the `libs/` folder:
 ### 1. Compile
 
 ```bash
-javac -cp "libs/*" -d out src/services/*.java src/Main.java
+javac -cp "libs/*" -d bin src/services/*.java src/Main.java
 ```
 ### 2. Execute
 ```bash
