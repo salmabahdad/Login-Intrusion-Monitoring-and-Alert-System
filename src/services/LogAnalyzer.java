@@ -6,7 +6,7 @@ import java.util.*;
 public class LogAnalyzer {
     private static final int FAILED_LOGIN_THRESHOLD = 5;
 
-    // 🔧 Make these static class-level fields
+
     private static final Map<String, Integer> loginAttempts = new HashMap<>();
     private static final Map<String, Integer> suspiciousIPs = new HashMap<>();
     private static final List<GeoIPService.GeoInfo> geoInfoList = new ArrayList<>();
@@ -58,7 +58,7 @@ public class LogAnalyzer {
                 System.out.println(alert);
                 EmailAlertService.send("mr.omarkh2000@gmail.com", "Brute-force Alert", alert);
             
-             // ✅ Perform GeoIP lookup here too
+             // GeoIP lookup here too
              try {
                 GeoIPService geo = new GeoIPService();
                 GeoIPService.GeoInfo info = geo.lookup(ip);
@@ -66,7 +66,7 @@ public class LogAnalyzer {
                     geoInfoList.add(info);
                     suspiciousIPs.put(ip, loginAttempts.get(ip)); // also store count
 
-                    // ✅ Export updated files in real-time
+                    // Export updated files in real-time
                     CSVExporter.export(suspiciousIPs, "outputs/alerts.csv");
                     JsonExporter.export(geoInfoList, "outputs/attacks.json");
                 }
