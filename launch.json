@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "GeoIP Lookup",
+        "request": "launch",
+        "mainClass": "Main",
+        "classPaths": [
+          "libs/*",
+          "bin"
+        ],
+        "java.project.referencedLibraries" : "libs/**/*.jar"
+        
+      }
+    ]
+  }
+  
+  

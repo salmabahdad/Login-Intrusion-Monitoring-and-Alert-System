@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Carte des attaques IP</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+       
+        var map = L.map('map').setView([20, 0], 2);
+
+        //background 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // load Json file
+        fetch('../outputs/attacks.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(entry => {
+                    L.marker([entry.lat, entry.lon])
+                        .addTo(map)
+                        .bindPopup(`<b>IP:</b> ${entry.ip}<br><b>Pays:</b> ${entry.country}`);
+                });
+            })
+            .catch(error => console.error('error during loading Json :', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+libs/
+outputs/
+*.log
+*.class
+*.jar
+ressources/GeoLite2-City.mmdb
