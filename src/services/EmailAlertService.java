@@ -6,8 +6,9 @@ import javax.mail.internet.*;
 
 public class EmailAlertService {
     public static void send(String toEmail, String subject, String messageText) {
-        final String fromEmail = "your@email.com";
-        final String password = "your_password";
+        final String fromEmail = "mr.omarkh2000@gmail.com";
+        final String password = "ompl tsab wtqt qmjy";
+
 
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
