@@ -44,8 +44,9 @@ Intrusion-Detection-System/
   Example:
 
 ```bash
-2025-05-12 02:13:45 192.168.1.15 failed  
-2025-05-12 02:15:12 192.168.1.25 success
+2024-05-07 151.101.1.69 FAILED
+2024-05-07 104.16.132.229 SUCCESS
+
 ```
 ⚠️ Important: Only public IP addresses should be included in the log file.
 
