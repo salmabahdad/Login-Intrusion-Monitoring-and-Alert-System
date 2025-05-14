@@ -1,4 +1,4 @@
-# 🔐 Intrusion Detection System (IDS)
+# 🔐 Geo-Aware Login Monitor 
 
   This project is a lightweight **Intrusion Detection System** built in Java, designed to monitor log files in real time, detect potential intrusions, and       alert administrators through multiple channels.
 ---
