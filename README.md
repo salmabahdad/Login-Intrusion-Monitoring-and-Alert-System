@@ -1,4 +1,4 @@
-# 🔐 Geo-Aware Login Monitor 
+# 🔐 Login Intrusion Monitoring and Alert System
 
   This project is a lightweight **Intrusion Detection System** built in Java, designed to monitor log files in real time, detect potential intrusions, and       alert administrators through multiple channels.
 ---
