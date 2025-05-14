@@ -1,6 +1,6 @@
 # 🔐 Login Intrusion Monitoring and Alert System
 
-  This project is a lightweight **Intrusion Detection System** built in Java, designed to monitor log files in real time, detect potential intrusions, and       alert administrators through multiple channels.
+  This project is a lightweight **RealTime Log Intrusion Monitor** built in Java, designed to monitor log files in real time, detect potential intrusions, and       alert administrators through multiple channels.
 ---
 
 ## 📌 Features
