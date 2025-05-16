@@ -72,20 +72,6 @@ Download these JARs and put them in the `libs/` folder:
 
 ---
 
-## 🧪 Run the IDS
-
-### 1. Compile
-
-```bash
-javac -cp "libs/*" -d bin src/services/*.java src/Main.java
-```
-### 2. Execute
-```bash
-java -cp "bin:libs/*" Main sample.log
-```
-
----
-
 ## ✉️ Email Setup
 -Edit EmailAlertService.java:
 ```bash
@@ -97,6 +83,20 @@ final String password = "your_app_password";     // App Password (not your Gmail
 EmailAlertService.send("receiveremail@gmail.com", "Brute-force Alert", alert);
 ```
 🔐 Get the password from Google App Passwords (you must enable 2-Step Verification first)
+
+---
+
+## 🧪 Run the IDS
+
+### 1. Compile
+
+```bash
+javac -cp "libs/*" -d bin src/services/*.java src/Main.java
+```
+### 2. Execute
+```bash
+java -cp "bin:libs/*" Main sample.log
+```
 
 ---
 
